@@ -1,0 +1,6 @@
+Fragen an Patrik:
+- Titel des Projektantrages
+- Wofür ist die Anwendung
+- Könnte sie mit anderen Anwendungen
+  interagieren
+- 
