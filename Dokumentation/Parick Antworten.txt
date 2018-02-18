@@ -3,29 +3,29 @@
 		- Es gibt mehrere Server auf die wir arbeiten.
 		- Service Engine (SE): Backend Server in Richtung 21c kern
 		- BitGo_OM (Online Modul): ist 21c kern da?
-		- FirstSpirit: CMS System für BitGo_GS
+		- FirstSpirit: CMS System fŸr BitGo_GS
 		- BitGo_GS Webapp
 		- BitGo_GS Auslieferungsserver
-		- ZFA Server: Server für die Zweifaktor Authentifizierung
+		- ZFA Server: Server fŸr die Zweifaktor Authentifizierung
 		- ZFA Mock
 		- Microservice Softlogin: Anmeldung mit KVNR und PLZ
 		- Microservice Zielgruppen: Zielgruppen erhalten spezielle Infos,
-		  gibt die Zielgruppen und die Teilnehmer zurück
-	b.	wofür werden diese benötigt?
+		  gibt die Zielgruppen und die Teilnehmer zurŸck
+	b.	wofŸr werden diese benštigt?
 		- S.o.
 
-2. Wenn einer dieser Mircroservices/Services ausfällt, 
-	a. welche Fehler können auftreten.
-		- Verschiedene, aber meist läuft die Anwendung nicht mehr richtig oder
+2. Wenn einer dieser Mircroservices/Services ausfŠllt, 
+	a. welche Fehler kšnnen auftreten.
+		- Verschiedene, aber meist lŠuft die Anwendung nicht mehr richtig oder
 		  es werden Exceptions geworfen.
 	b.Wie werden diese Fehler erkannt und/oder behoben.
-		- Aktuell muss mühsam jeder Service überprüft werden (der eventuell in den Fall beteiligt ist),
+		- Aktuell muss mŸhsam jeder Service ŸberprŸft werden (der eventuell in den Fall beteiligt ist),
 		  ob dieser verfügbar ist oder nicht. Behoben wird der Fehler meist mit einem Neustart des Service.
-		- Eventuell könntest du ja auch die Rückgabe eines Service Aufruf anzeigen.
-		  Z.B. „server:8080/version“ -> liefert „Version 1.0“.
-		  Dieser Aufruf sollte dann konfigurierbar sein und sollte nur zurückgegeben werden
+		- Eventuell kšnntest du ja auch die RŸckgabe eines Service Aufruf anzeigen.
+		  Z.B. server:8080/version -> liefert Version 1.01.
+		  Dieser Aufruf sollte dann konfigurierbar sein und sollte nur zurŸckgegeben werden
 		  wenn diese Funktion in der GUI aufgerufen wird.
 
-3. Wie erfolgt ein Nachprüfen/Suchen des Services der ausgefallen ist. Sprich,
-   wie ist der genaue Ablauf. Vielleicht könntest du mir auch es kurz demonstrieren.
+3. Wie erfolgt ein NachprŸfen/Suchen des Services der ausgefallen ist. Sprich,
+   wie ist der genaue Ablauf. Vielleicht kšnntest du mir auch es kurz demonstrieren.
 		-Meinst du das aktuell?
