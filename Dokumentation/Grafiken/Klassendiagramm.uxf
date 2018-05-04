@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>470</y>
+      <w>260</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Port
+--
+- name: String
+- port: String
+- rv: RegExValidator
+--
+&lt;&lt;Konstruktor&gt;&gt;
++ Port(name:String)
+&lt;&lt;Methoden&gt;&gt;
++ createValidPort(port:String):Boolean
++ getName():String
++ setName(name:String):void
++ getPort():String
++ setPort(port:String):void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>310</y>
+      <w>760</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>RegExValidator
+--
+- pattern: Pattern
+- matcher: Matcher
+_- IPADDRESS_PATTERN: String = "(([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\.){3}"+"([01]?\\d\\d?|2[0-4]\\d|25[0-5])"_
+_- ONLY_NUMBER_PATTERN: String = "\\d{1,5}"_
+--
++ validateIP(valueToCheck:String): Boolean
++ validateOnlyNumField(valueToCheck: String)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>830</x>
+      <y>560</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+Package::FatClass
+{Some Properties}
+--
+-id: Long {composite}
+_-ClassAttribute: Long_
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+-- Resp2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>470</y>
+      <w>290</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>Server
+--
+- name: String
+- host: String
+- ip: String
+- ipArray: String[]
+- inet: InetAddress
+- rv: RegExValidator
+--
+&lt;&lt;Konstruktor&gt;&gt;
++ Server(name:String)
+&lt;&lt;Methoden&gt;&gt;
++ createValidServer(ip:String):Boolean
++ makeIpFromArray(ipArr:String[]):String
++ makeArrayFromIp(ip:String):String[]
++ getName():String
++ setName(name:String):void
++ getHost():String
++ setHost(port:String):void
++ getIp():String
++ setIp(port:String):void
++ getIpArray():String[]
++ setIpArray(port:String[]):void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
