@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>14</y>
+      <w>329</w>
+      <h>616</h>
+    </coordinates>
+    <panel_attributes>ViewController
+--
+-content : ObservableList&lt;ServerPortTableContent&gt;
+-createdON : TableColumn&lt;ServerPortTableContent, String&gt;
+-getSessionBtn : Button
+-intervallSlider : Slider
+-intervalPH : Label
+-ipAddr0TField : TextField
+-ipAddr1TField : TextField
+-ipAddr2TField : TextField
+-ipAddr3TField : TextField
+-ipTFieldConcat : String
+-isConnected : TableColumn&lt;ServerPortTableContent, String&gt;
+-isPortChoose : boolean
+-isPortEditActiv : boolean
+-isServerChoose : boolean
+-isServerEditActiv : boolean
+-jfList : JSONContentInAList
+-messageLabel : Label
+-ncService : Service&lt;Object&gt;
+-pNew : Port
+-pOld : Port
+-port : TableColumn&lt;ServerPortTableContent, String&gt;
+-portAddrTField : TextField
+-portComboBox : ComboBox&lt;String&gt;
+-portNameTField : TextField
+-server : TableColumn&lt;ServerPortTableContent, String&gt;
+-serverComboBox : ComboBox&lt;String&gt;
+-serverNameTField : TextField
+-serverPortConTable : TableView&lt;ServerPortTableContent&gt;
+-sNew : Server
+-sOld : Server
+-updatedON : TableColumn&lt;ServerPortTableContent, String&gt;
+--
++addConfig() : void
++addPortValuesFromComboToTFields() : void
++clearPortField() : void
++clearServerField() : void
++delportEntry() : void
++delServerEntry() : void
++editAreaDefault() : void
++editPortEntry() : void
++editServerEntry() : void
++getOldSession() : void
++initialize(URL, ResourceBundle) : void
+-isPortFieldNotEmptyAndValid() : Boolean
+-isSAddrFieldValid() : Boolean
++loadFile() : void
++newEmptySession() : void
++savePortEntry() : void
++saveServerEntry() : void
++setPortFieldEditable(boolean) : void
++setServerChoiceMade() : void
+-setTableContent() : void
+-updatePortList() : void
+-updateServerList() : void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

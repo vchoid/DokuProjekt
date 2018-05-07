@@ -5,8 +5,8 @@
     <id>UMLClass</id>
     <coordinates>
       <x>60</x>
-      <y>470</y>
-      <w>260</w>
+      <y>100</y>
+      <w>270</w>
       <h>210</h>
     </coordinates>
     <panel_attributes>Port
@@ -30,8 +30,8 @@
     <id>UMLClass</id>
     <coordinates>
       <x>60</x>
-      <y>310</y>
-      <w>760</w>
+      <y>500</y>
+      <w>800</w>
       <h>130</h>
     </coordinates>
     <panel_attributes>RegExValidator
@@ -49,31 +49,8 @@ _- ONLY_NUMBER_PATTERN: String = "\\d{1,5}"_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>830</x>
-      <y>560</y>
-      <w>210</w>
-      <h>190</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
-Package::FatClass
-{Some Properties}
---
--id: Long {composite}
-_-ClassAttribute: Long_
---
-#Operation(i: int): int
-/+AbstractOperation()/
---
-Responsibilities
--- Resp1
--- Resp2</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>340</x>
-      <y>470</y>
+      <x>350</x>
+      <y>100</y>
       <w>290</w>
       <h>350</h>
     </coordinates>
@@ -102,5 +79,27 @@ Responsibilities
 + setIpArray(port:String[]):void
 </panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>180</x>
+      <y>300</y>
+      <w>30</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>440</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
   </element>
 </diagram>

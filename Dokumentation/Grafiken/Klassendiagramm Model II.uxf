@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>413</x>
+      <y>0</y>
+      <w>266</w>
+      <h>413</h>
+    </coordinates>
+    <panel_attributes>JSONFileInitialisator
+--
+-gson:GSON
+-file:File
+-reader:BufferedReader
+-input:FileInputStream
+-writer:BufferedWriter
+-out:FileOutputStream
+-jsonObj:JsonObject
+-settingsArray:JsonArray
+-portsArray:JsonArray
+-serverArray:JsonArray
+-queryArray:JsonArray
+-excMessage:String
+--
++init():void
++setFile(file:File):void
++readFromFileParseFileAsJSONObject(file:String):void
++writeInFile(content:String):void
+-setValuesInAList():void
+&lt;&lt;Getter und Setter&gt;&gt;
++getInput():FileInputStream
++getReader():BufferedReader
++getOut():FileOutputStream
++getWriter():BufferedWriter
++getJsonObj():JsonObject
++setJsonObj(json:JsonObject):void
++getFile():File
++getPortsArray():JsonArray
++setPortsArray(portsArray:JsonArray):void
++getServerArray():JsonArray
++setServerArray(serevrArray:JsonArray):void
++getSettingsArray():JsonArray
++setSettingsArray(settingsArray:JsonArray):void
++getQueryArray():JsonArray
++setQueryArray(queryArray:JsonArray):void
++getExcMessage():String
++setExcMessage(excMessage:String):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>294</x>
+      <y>455</y>
+      <w>511</w>
+      <h>406</h>
+    </coordinates>
+    <panel_attributes>JSONContentHandler
+--
+-newPort:JsonObject
+-newServer:JsonObject
+-portsArray:JsonArray
+-serverArray:JsonArray
+-positionInArray:int
+-searchElement:JsonElement
+-success:Boolean = false;
+--
+-isValueInArray(array:JsonArray,key:String,value:Strin):Boolean
+-isPortAvailable(port:Port):Boolean
+-isServerAvailable(server:Server):Boolean
+-isQueryAvailable(spcQuery:ServerPortConnectionQuery):Boolean
++searchValueByName(searchFromArray:JsonArray,byNameValue:String,getValueDoYouNeed:String):String
+-addNewObjectInArray(array:JsonArray, newObject:JsonObject):void
+-addNewArrayInJSONFile(array:JsonArray,key:String):void
+-addObjectInArrayAndWriteInFile(array:JsonArray, newObject:JsonObject,key:String):void
+-addPortValues(port:Port):void
++addPort(port:Port):void
+-addServerValues(server:Server):void
++addServer(server:Server):void
+-removeValueFromArray(value:String,array:JsonArray):void
+-deleteValuesFromArrayFromFile(array:JsonArray,arrayInFile:String,value:String):void
++deletePort(portName:String):void
++deleteServer(serverName:string):void
+&lt;&lt;Getter und Setter&gt;&gt;
++getSuccess():Boolean
++setSuccess(succes:Boolean):void
++getSearchElement():JsonElement
++setSearchElement(searchElement:JsonElement):void
++getPortsArray():JsonArray
++setPortsArray(portsArray:JsonArray):void
++getServerArray():JsonArray
++setServerArray(serverArray:JsonArray):void
++getPositionInArray():int
++setPositionInArray(posInArray:int):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>546</x>
+      <y>406</y>
+      <w>21</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>910</y>
+      <w>392</w>
+      <h>217</h>
+    </coordinates>
+    <panel_attributes>JSONContentInAList
+--
+-portList:ObservableList&lt;String&gt;
+-portNameList:ObservableList&lt;String&gt;
+-serverNameList:ObservableList&lt;String&gt;
+-ipList:ObservableList&lt;String&gt;
+-hostList:ObservableList&lt;String&gt;
+--
++saveLists():void
+-saveValuesInArray(array:JsonArray,key:string,list:ObservableList&lt;String&gt;):void
++saveServerValuesInAList():void
++savePortValuesInAList():void
++clearList(oList:ObservableList&lt;String&gt;):void
+&lt;&lt;Getter und Setter&gt;&gt;
++getHostList():ObservableList&lt;String&gt;
++setHostList(hostList:ObservableList&lt;String&gt;):void
++getIpList():ObservableList&lt;String&gt;
++getServerNameList():ObservableList&lt;String&gt;
++getPortList():ObservableList&lt;String&gt;
++getPortNameList():ObservableList&lt;String&gt;
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>546</x>
+      <y>854</y>
+      <w>21</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+</diagram>
